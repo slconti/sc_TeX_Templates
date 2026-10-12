@@ -1,0 +1,36 @@
+\documentclass[12pt, letterpaper, onecolumn]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{fancyhdr}
+\setlength{\headheight}{14.5pt}
+\usepackage{graphicx}
+\usepackage{caption}
+\captionsetup[figure]{font=small}
+\usepackage{amsmath}
+\usepackage[]{siunitx}
+\usepackage[style=numeric,sorting=none]{biblatex}
+\usepackage{array}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}p{#1}}
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{setspace}
+\doublespacing
+
+\addbibresource{references.bib}
+\pagestyle{fancy}
+\fancyhf{}
+\usepackage{titlesec}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage[usenames,dvipsnames]{color} %using the color package, not xcolor
+\titleformat*{\section}{\normalfont\bfseries}
+\titleformat*{\subsection}{\normalfont\small\bfseries}
+
+\newenvironment{note}{\color{Periwinkle}\noindent\textbf{Note to Reviewers:}}
+
+\newenvironment{todo}{\color{red}\noindent\textbf{To-do:}}
+
+
+\lhead{S. Conti}% and R. Kantrowitz} % change this to your actual name
+\rhead{Hamilton College} % same for your university
+\rfoot{\thepage}
